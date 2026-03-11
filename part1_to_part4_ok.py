@@ -1,4 +1,5 @@
-#20260131
+#第一版
+#含「基本知能」、「通識基礎必修」、「通識延伸選修」、「學系必修」
 import pdfplumber
 import pandas as pd
 import re
@@ -175,4 +176,5 @@ def check_graduation_progress(pdf_path):
         print(f"⚠️ 學系必修解析失敗: {e}")
 
 if __name__ == "__main__":
+
     check_graduation_progress(pdf_file)
